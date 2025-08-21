@@ -1,7 +1,7 @@
 public class checkpalindrome {
     public int palindromeNumber(int n) {
         int reverseNumber = 0;
-        int duplicateofn = n;
+        int duplicate = n;
         
         while (n > 0) {
             int lastDigit = n % 10;
@@ -9,7 +9,7 @@ public class checkpalindrome {
             reverseNumber = (reverseNumber * 10) + lastDigit;
         }
         
-        if (duplicateofn == reverseNumber) {
+        if (duplicate== reverseNumber) {
             return 1; 
         } else {
             return 0; 
@@ -18,7 +18,7 @@ public class checkpalindrome {
 
     public static void main(String[] args) {
         checkpalindrome obj = new checkpalindrome(); 
-        int n = 45654; 
+        int n = 6789876; 
         int result = obj.palindromeNumber(n); 
 
         if (result == 1) {
