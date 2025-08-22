@@ -1,6 +1,6 @@
 public class factorial {
     public static long fact(int n) {
-        long fact = 1;
+        int fact = 1;
         for (int i = 1; i <= n; i++) {
             fact *= i;
         }
@@ -8,7 +8,7 @@ public class factorial {
     }
 
     public static void main(String[] args) {
-        int num = 7;
+        int num = 13;
         System.out.println("Factorial of " + num + " = " + fact(num));
     }
 }
