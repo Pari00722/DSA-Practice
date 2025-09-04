@@ -7,7 +7,7 @@ public class backtrack {
         System.out.println(i);
     }
     public static void main(String[] args) {
-        int n=3;
+        int n=3;  
         printN(n,n);
     }
 }
