@@ -1,4 +1,4 @@
-class Solution {
+class classSolution {
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> pairIdx = new HashMap<>();
 
