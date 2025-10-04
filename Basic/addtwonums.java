@@ -1,13 +1,12 @@
-// Definition for singly-linked list
+
 class ListNode {
     int val;
     ListNode next;
-    ListNode() {}
-    ListNode(int val) { this.val = val; }
-    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+    
+    ListNode(int val) { 
+        this.val = val; 
+    }
 }
-
-// Solution class containing the addTwoNumbers method
 class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode(0);
@@ -32,7 +31,6 @@ class Solution {
     }
 }
 
-// Main class to test the solution
 public class addtwonums {
     public static void main(String[] args) {
         // Create first linked list l1 = [2,4,3]
@@ -45,11 +43,9 @@ public class addtwonums {
         l2.next = new ListNode(6);
         l2.next.next = new ListNode(4);
 
-        // Call solution
         Solution sol = new Solution();
         ListNode result = sol.addTwoNumbers(l1, l2);
 
-        // Print result linked list
         System.out.print("Result: ");
         while (result != null) {
             System.out.print(result.val);
