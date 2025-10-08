@@ -22,19 +22,9 @@ public class RemoveDuplicates {
             System.out.print(nums1[i] + " ");
         }
 
-        System.out.println("\n----------------------------");
+        System.out.println("\n");
+    }
+}
 
-        // Example 2
-        int[] nums2 = {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
-        int k2 = removeDuplicates(nums2);
-        System.out.println("Unique Count: " + k2);
-        System.out.print("Modified Array: ");
-        for (int i = 0; i < k2; i++) {
-            System.out.print(nums2[i] + " ");
-        }
-
-        System.out.println("\n----------------------------");
-
-        // Example 3 (Custom test)
-        int[] nums3 = {-3, -3, -2, -1, -1, 0, 1, 1, 2};
-        i
+        
+       
