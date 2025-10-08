@@ -1,7 +1,6 @@
-public class ListNode {
+class ListNode {
     int val;
     ListNode next;
-
     ListNode(int val) {
         this.val = val;
         this.next = null;
@@ -9,7 +8,7 @@ public class ListNode {
 }
 
 public class mergelists {
-    public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+    static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         ListNode dummy = new ListNode(-1);
         ListNode current = dummy;
 
@@ -28,7 +27,7 @@ public class mergelists {
         return dummy.next;
     }
 
-    public static void printList(ListNode head) {
+    static void printList(ListNode head) {
         while (head != null) {
             System.out.print(head.val + " ");
             head = head.next;
