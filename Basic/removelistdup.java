@@ -10,13 +10,13 @@ public class removelistdup {
 
         while (current != null && current.next != null) {
             if (current.val == current.next.val) {
-                current.next = current.next.next; // skip duplicate
+                current.next = current.next.next; 
             } else {
-                current = current.next; // move forward
+                current = current.next;
             }
         }
 
-        return head; // ✅ Make sure this line exists
+        return head; 
     }
 
     public static void printList(ListNode head) {
@@ -28,7 +28,6 @@ public class removelistdup {
     }
 
     public static void main(String[] args) {
-        // Example: head = [1,1,2,3,3]
         ListNode head = new ListNode(1);
         head.next = new ListNode(1);
         head.next.next = new ListNode(2);
@@ -36,6 +35,6 @@ public class removelistdup {
         head.next.next.next.next = new ListNode(3);
 
         head = deleteDuplicates(head);
-        printList(head); // Output: 1 2 3
+        printList(head); 
     }
 }
