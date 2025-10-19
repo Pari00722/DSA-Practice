@@ -17,11 +17,11 @@ public class btreetrav {
         while (current != null || !stack.isEmpty()) {
             while (current != null) {
                 stack.push(current);
-                current = current.left; // go left
+                current = current.left;
             }
             current = stack.pop();
-            result.add(current.val);     // visit node
-            current = current.right;     // go right
+            result.add(current.val);     
+            current = current.right;    
         }
 
         return result;
@@ -32,6 +32,6 @@ public class btreetrav {
         root.right = new TreeNode(2);
         root.right.left = new TreeNode(3);
 
-        System.out.println(inorderTraversal(root)); // [1, 3, 2]
+        System.out.println(inorderTraversal(root));
     }
 }
