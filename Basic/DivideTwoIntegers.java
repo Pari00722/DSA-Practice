@@ -38,8 +38,5 @@ public class DivideTwoIntegers {
     public static void main(String[] args) {
         System.out.println(divide(10, 3));   // Output: 3
         System.out.println(divide(7, -3));   // Output: -2
-        System.out.println(divide(-15, 2));  // Output: -7
-        System.out.println(divide(-8, -2));  // Output: 4
-        System.out.println(divide(1, 1));    // Output: 1
     }
 }
